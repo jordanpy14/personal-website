@@ -8,7 +8,7 @@ const PersonalInfo = () => {
                 <a href="https://www.linkedin.com/in/jordan-paredes-0a3ab21a6/">LinkedIn</a>
             </p>
             <p>
-                <a href="https://github.com/yourname">GitHub</a>
+                <a href="https://github.com/jordanpy14">GitHub</a>
             </p>
         </div>
     );

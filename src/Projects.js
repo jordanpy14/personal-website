@@ -1,17 +1,17 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import "./Projects.css";
 
-const Projects = () => {
-    return (
-        <div>
-            <h2>My Projects</h2>
-            <p>
-                <a href="https://www.yourproject1.com/">Project 1</a>
-            </p>
-            <p>
-                <a href="https://www.yourproject2.com/">Project 2</a>
-            </p>
-        </div>
-    );
-};
+function Projects() {
+  return (
+    <div>
+      <h1>My Projects</h1>
+      <p>Here, you can describe your projects.</p>
+      <Link to="/">
+          <button>Go back Home</button> 
+      </Link>
+    </div>
+  );
+}
 
 export default Projects;

@@ -1,12 +1,17 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import "./Resume.css";
 
-const Resume = () => {
-    return (
-        <div>
-            <h2>My Resume</h2>
-            <p>Your resume goes here...</p>
-        </div>
-    );
-};
+function Resume() {
+  return (
+    <div>
+      <h1>My Resume</h1>
+      <p>Here, you can present your resume.</p>
+      <Link to="/">
+          <button>Go back home</button>
+      </Link>
+    </div>
+  );
+}
 
 export default Resume;

@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: grey;
+
 }
 
 .App-logo {
@@ -38,15 +40,71 @@
 }
 
 .background-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
   min-width: 100%; 
   min-height: 100%;
-  z-index: -1;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  object-fit: cover;
+  
 }
 
 .App-header {
   position: relative;
   z-index: 1;
 }
+.welcome-message {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* or any color you want */
+  font-size: 2em; /* adjust size as needed */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  background-color: grey !important; /* Add background to the content*/
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.welcome-message {
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.who-am_i{
+  color: white;
+  font-size: 6em ;
+}
+
+.welcome {
+  color: white; /* or any color you want */
+  font-size: 3em; /* adjust size as needed */
+}
+
+.welcome-subtext {
+  color: white; /* or any color you want */
+  font-size: 1.5em; /* adjust size as needed */
+}
+.link-container {
+  display: flex;
+  justify-content: space-around; /* This will evenly space your links */
+}
+
+.link-image {
+  width: 100px; /* adjust as needed */
+  height: 100px; /* adjust as needed */
+  object-fit: cover; /* This will maintain the aspect ratio of the images */
+}
+
